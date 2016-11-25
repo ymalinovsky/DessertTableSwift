@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="164" id="4Fw-Bp-4Ey">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="164" id="4Fw-Bp-4Ey" customClass="TableViewCell" customModule="DessertTable" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="164"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Fw-Bp-4Ey" id="RdA-QH-apd">
@@ -38,6 +38,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImageView" destination="W8J-aC-PBS" id="IOn-nw-ihM"/>
+                                    <outlet property="cellLabel" destination="rwl-1z-cgw" id="aaZ-03-ZVI"/>
+                                    <outlet property="imageView" destination="W8J-aC-PBS" id="Om0-AR-dje"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,7 +53,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbj-NP-pue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354.375" y="103.52112676056338"/>
+            <point key="canvasLocation" x="-394" y="-105"/>
         </scene>
     </scenes>
 </document>
